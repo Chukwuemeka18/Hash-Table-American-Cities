@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 typedef char* string;
-typedef struct cartoon{
+typedef struct US_City{
 
   string name;
-  struct city* p;
+  struct US_City* p;
 
 } 
 node;
