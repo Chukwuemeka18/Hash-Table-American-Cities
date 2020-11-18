@@ -96,6 +96,14 @@ int main(void) {
   Manhattan->name = "Manhattan";
   city[13-1] = Manhattan;
 
+  node* Merced = malloc(sizeof(node));
+  Merced->name = "Merced";
+  Manhattan->p = Merced;
+
+  node* Minneapolis = malloc(sizeof(node));
+  Minneapolis->name = "Minneapolis";
+  Merced->p = Minneapolis;
+
   //N
   node* NewPort = malloc(sizeof(node));
   NewPort->name = "New Port";
@@ -165,8 +173,9 @@ int main(void) {
 
    for(int i = 0; i < 26; i++){
      for(node* list = city[i]; list != NULL; list = list->p){
-       printf("%s\n", list->name);
+       printf("%s, ", list->name);
      }
+     printf("\n");
    }
 
 //link: https://kidsareatrip.com/see-usa-cities-z/
