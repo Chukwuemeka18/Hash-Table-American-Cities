@@ -15,14 +15,22 @@ int main(void) {
 
   /*
 
-  a b c d 
-  e f g h 
-  i j k l
-  m n o p
-  q r s t 
-  u v w x
-  y z
-
+  Letter to Indexes
+  
+  a    b    c    d 
+  00   01   02   03 
+  e    f    g    h  
+  04   05   06   07 
+  i    j    k    l  
+  08   09   10   11
+  m    n    o    p  
+  12   13   14   15
+  q    r    s    t  
+  16   17   18   19
+  u    v    w    x  
+  20   21   22   23
+  y    z
+  24   25
 
 
   */
